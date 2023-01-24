@@ -13,7 +13,6 @@ const ContactForm =  () => {
         const require = contacts.filter(contact => contact.name.toLowerCase() === form.elements.name.value);
 
         if (require.length === 0) {
-            console.log(form.elements.number.value)
             dispatch(
               addContact({
                 name: form.elements.name.value,

@@ -11,7 +11,6 @@ const Filter = () => {
   const filter = useSelector(getFilter);
   
   const handleChange = event => {
-    console.log(event.target.value);
     dispatch(setFilter(event.target.value));
   }
     
