@@ -21,8 +21,6 @@ const ContactList = () => {
     contact => contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
-  const handleDelete = evt => dispatch(deleteContact(evt.target.id));
-
     return (
       <ul className={css.contactList}>
         {filteredContacts.map(contact => {
@@ -33,8 +31,7 @@ const ContactList = () => {
               </span>
               <button
                 type="button"
-                onClick={handleDelete}
-                id={contact.id}
+                onClick={() => dispatch(deleteContact(contact.id))}
                 className={css.contactButton}
               >
                 Delete
