@@ -39,6 +39,7 @@ const ContactForm =  () => {
               className={css.contactInput}
               type="text"
               name="name"
+              placeholder='Clarck Kent'
               pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
               required
             />
@@ -50,6 +51,7 @@ const ContactForm =  () => {
               className={css.contactInput}
               type="text"
               name="number"
+              placeholder='+380111111111'
               pattern="^(?:\+38)?(0\d{9})$"
               required
             />
